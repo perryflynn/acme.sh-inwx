@@ -7,9 +7,11 @@ and [inwx.de](https://www.inwx.de/) [API](https://github.com/inwx/python2.7-clie
 
 ```
 cp inwxcredentials.py.skel inwxcredentials.py
-nano inwxcredentials.py # Your login inwx data
 ln -s ~/letsencrypt-acme.sh-inwx/dns_inwx.sh ~/.acme.sh/dns_inwx.sh
 ```
+
+- Edit your credentials in inwxcredentials.py
+- Edit absolute path to acme-inwx.py in dns_inwx.sh
 
 ## Use it
 
