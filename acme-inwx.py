@@ -24,7 +24,7 @@ def main(inwxcredentials, args):
     loginRet = inwx_conn.account.login({'lang': 'en', 'user': inwxcredentials["username"], 'pass': inwxcredentials["password"] })
 
     # Perform OTP login if necessary
-    if 'tfa' in loginRet and loginRet['tfa'] == 'GOOGLE-AUTH':
+    if 'tfa' in loginRet['resData'] and loginRet['resData']['tfa'] == 'GOOGLE-AUTH':
         inwx_conn.account.unlock({'tan': getOTP(inwxcredentials["otpsecret"])})
 
     print("Searching nameserver zone for "+targetdomain)
