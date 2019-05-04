@@ -1,4 +1,10 @@
 
+# Update 2019-05-04
+
+This piece of software is not obsolete since there is a official support for the inwx API in acme.sh.
+
+---
+
 **[EXPERIMENTAL]** Create Lets Encrypt Certificates with
 [acme.sh](https://github.com/Neilpang/acme.sh)
 and [inwx.de](https://www.inwx.de/) [API](https://github.com/inwx/python2.7-client) via DNS Challenge Validation.
